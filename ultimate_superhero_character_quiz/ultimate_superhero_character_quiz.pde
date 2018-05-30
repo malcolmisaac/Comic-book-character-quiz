@@ -7,7 +7,7 @@ int totalCorrect = 0;
 int question = 0;
 String correctAnswer;
 String findPercent;
-int totalQuestions = 31;
+int totalQuestions = 37;
 PImage bat;
 PImage aveng;
 PImage kal;
@@ -41,6 +41,18 @@ PImage nightwing;
 PImage freeze;
 PImage modok;
 PImage bp;
+PImage dark;
+PImage adam;
+PImage bb;
+PImage kang;
+PImage ss; 
+PImage rf; 
+PImage gr;
+PImage stpwlf;
+PImage bg;
+PImage ab;
+PImage cm;
+PImage rh;
 
 void setup() { 
 
@@ -81,6 +93,19 @@ nightwing = loadImage("nightwing.png");
 freeze = loadImage("freeze.png");
 modok = loadImage("MODOK.jpg");
 bp = loadImage("bp.jpg");
+dark = loadImage("dark.png");
+adam = loadImage("adam.jpg");
+bb = loadImage("blue beetle.jpg");
+kang = loadImage("kang.jpg");
+ss = loadImage("suicide squad.jpg");
+rf = loadImage("reversee flash.jpg");
+gr = loadImage("ghost rider.jpg");
+stpwlf = loadImage("steppenwolf.jpg");
+bg = loadImage("booster gold.jpg");
+ab = loadImage("abomination.jpg");
+cm = loadImage("captain marvel.jpg");
+rh = loadImage("red hood.jpg");
+
 }
 
 
@@ -349,6 +374,79 @@ void draw() {
     correctAnswer = "black panther";
       image(bp, 220,220,400,300);
   }
+         else if (question == 34){
+   
+    text("Who is this DC villain?", 250, 100, 400, 250);
+    correctAnswer = "darksied";
+      image(dark, 220,220,400,300);
+  }
+         else if (question == 35){
+   
+    text("Who is this Marvel character?", 250, 100, 400, 250);
+    correctAnswer = "adam warlock";
+      image(adam, 220,220,400,300);
+  }
+         else if (question == 36){
+   
+    text("Who is this DC hero?", 250, 100, 400, 250);
+    correctAnswer = "blue beetle";
+      image(bb, 220,220,400,300);
+  }
+         else if (question == 37){
+   
+    text("Who is this Marvel villain?", 250, 100, 400, 250);
+    correctAnswer = "kang the conquerer";
+      image(kang, 220,220,400,300);
+  }
+           else if (question == 38){
+   
+    text("Who is this DC team?", 250, 100, 400, 250);
+    correctAnswer = "suicide squad";
+      image(ss, 220,220,400,300);
+  }
+           else if (question == 39){
+   
+    text("Who is this DC villain?", 250, 100, 400, 250);
+    correctAnswer = "reverse flash";
+      image(rf, 220,220,400,300);
+  }
+           else if (question == 40){
+   
+    text("Who is this Marvel hero?", 250, 100, 400, 250);
+    correctAnswer = "ghost rider";
+      image(gr, 220,220,400,300);
+  }
+           else if (question == 41){
+   
+    text("Who is this DC villain?", 250, 100, 400, 250);
+    correctAnswer = "steppenwolf";
+      image(stpwlf, 220,220,400,300);
+  }
+           else if (question == 42){
+   
+    text("Who is this DC hero?", 250, 100, 400, 250);
+    correctAnswer = "booster gold";
+      image(bg, 220,220,400,300);
+  }
+           else if (question == 43){
+   
+    text("Who is this Marvel villain?", 250, 100, 400, 250);
+    correctAnswer = "abomination";
+      image(ab, 220,220,400,300);
+  }
+           else if (question == 44){
+   
+    text("Who is this Marvel hero?", 250, 100, 400, 250);
+    correctAnswer = "captain marvel";
+      image(cm, 220,220,400,300);
+  }
+           else if (question == 45){
+   
+    text("Who is this DC character?", 250, 100, 400, 250);
+    correctAnswer = "red hood";
+      image(rh, 220,220,400,300);
+  }
+  
   else{
    text("You are done!", 50,250,700,250);
      text("You got " + totalCorrect + " correct answers. You're total percent is %" + findPercent(totalCorrect, totalQuestions), 50,300,700,250);
